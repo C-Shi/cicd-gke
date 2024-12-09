@@ -14,6 +14,7 @@ steps:
       - '-f'
       - 'k8s/deployment.yaml'
     env:
+      - 'CLOUDSDK_COMPUTE_REGION=us-central1'
       - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-cluster-1'
 
 substitutions:
