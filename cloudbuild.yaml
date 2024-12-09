@@ -14,8 +14,7 @@ steps:
       - 'apply'
       - '-f'
       - 'k8s/deployment.yaml'
-    envs:
-      - 'CLOUDSDK_COMPUTE_ZONE'
+    env:
       - 'CLOUDSDK_CONTAINER_CLUSTER=autopilot-cluster-1'
 
 substitutions:
